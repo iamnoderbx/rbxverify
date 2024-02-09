@@ -1,0 +1,36 @@
+div.footer {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+div.background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+div.background:before {
+    content: '';
+    position: absolute;
+    background-image: url('/images/background.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+    filter: brightness(0.3) blur(15px); 
+    -webkit-filter: brightness(0.3) blur(15px);
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    transform: scale(1.1); 
+
+    min-height: 100%;
+    z-index:-1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
